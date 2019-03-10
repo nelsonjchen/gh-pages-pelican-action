@@ -28,7 +28,7 @@ git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 git add .
 echo -n 'Files to Commit:' && ls -l | wc -l
 timestamp=$(date +%s%3N)
-git commit -m "Automated deployment to GitHub Pages on $timestamp"
+git commit -m "[ci skip] Automated deployment to GitHub Pages on $timestamp"
 git push deploy $remote_branch --force
 rm -fr .git
 cd ../
