@@ -1,4 +1,7 @@
-#!/bin/sh
+#!/bin/bash
+
+set -e
+
 echo '=================== Install Requirements ==================='
 pip install -r requirements.txt
 echo '=================== Create deploy key to push ==================='
@@ -14,7 +17,7 @@ cd output
 remote_repo="git@github.com:${GITHUB_REPOSITORY}.git" && \
 remote_branch="gh-pages" && \
 git init && \
-git remote add deploy $remote_repo && \
+git remote add deploy "$remote_repo" && \
 git checkout $remote_branch || git checkout --orphan $remote_branch && \
 git config user.name "${GITHUB_ACTOR}" && \
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
