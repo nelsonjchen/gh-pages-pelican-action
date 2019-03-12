@@ -14,7 +14,7 @@ echo "${GIT_DEPLOY_KEY}" > /root/.ssh/id_rsa && \
 chmod 400 /root/.ssh/id_rsa
 echo '=================== Build site ==================='
 python generate_meetup_posts.py
-pelican content -o output -s pelicanconf.py
+make publish
 echo '=================== Publish to GitHub Pages ==================='
 cd output
 # shellcheck disable=SC2012
