@@ -1,7 +1,7 @@
 FROM python:3.7
 
 LABEL "com.github.actions.name"="Pelican for GitHub Pages"
-LABEL "com.github.actions.description"="Builds and deploys the project to GitHub Pages"
+LABEL "com.github.actions.description"="Builds and deploys the Pelican project to GitHub Pages"
 LABEL "com.github.actions.icon"="home"
 LABEL "com.github.actions.color"="red"
 
