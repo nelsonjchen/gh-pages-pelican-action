@@ -1,13 +1,13 @@
 # GitHub Pages Pelican Build Action
 
-This action builds a Pelican project and deploys it to GitHub pages.
+This action builds a Pelican project and deploys it to GitHub Pages.
 
-It was extracted from https://github.com/desertpy/desertpy-pelican/ which
-has modified it a bit there to handle some extra pre-processing commands.
+Please ensure a `requirements.txt` is present for your site and installs
+`pelican` and other requirements needed to build your site.
 
-That said, this is *not currently being used* on GitHub actions there either.
-GitHub actions did not support scheduled jobs. We've lightly ported it to
-CircleCI there.
+## History
 
-If you don't have a need for custom commands or scheduled runs,
-this GitHub action is perfect for your Pelican project!
+Extracted from https://github.com/desertpy/desertpy-pelican.
+
+It is not used there anymore though. For most sites though, this should
+suffice.
