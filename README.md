@@ -8,6 +8,7 @@ Please ensure a `requirements.txt` is present for your site and installs
 ## Secrets
 
   - `GIT_DEPLOY_KEY`: provide the private key for a [deploy key][1]
+    - *WARNING*, this should be considered deprecated. A future version of this action will use the `GITHUB_TOKEN` secret instead.
 
 ## History
 
