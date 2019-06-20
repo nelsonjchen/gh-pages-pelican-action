@@ -10,6 +10,10 @@ Please ensure a `requirements.txt` is present for your site and installs
   - `GIT_DEPLOY_KEY`: provide the private key for a [deploy key][1]
     - *WARNING*, this should be considered deprecated. A future version of this action will use the `GITHUB_TOKEN` secret instead.
 
+## Environment variables
+
+  - `GH_PAGES_BRANCH` (optional): override the default `gh-pages` deployment branch
+
 ## History
 
 Extracted from https://github.com/desertpy/desertpy-pelican.
