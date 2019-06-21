@@ -7,7 +7,7 @@ Please ensure a `requirements.txt` is present for your site and installs
 
 ## Secrets
 
-  - `GIT_DEPLOY_KEY`: provide an SSH private key for a [deploy key][1]
+  - `GIT_DEPLOY_KEY`: provide a SSH private key for a [deploy key][1]
     - This is an alternative to `GITHUB_TOKEN` [which currently can't build pages][gt_limit].
     - Personal Access Tokens are not desired either since they grant access to your
       *whole* account.
