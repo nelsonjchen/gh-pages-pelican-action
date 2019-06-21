@@ -7,8 +7,10 @@ Please ensure a `requirements.txt` is present for your site and installs
 
 ## Secrets
 
-  - `GIT_DEPLOY_KEY`: provide the private key for a [deploy key][1]
-    - *WARNING*, this should be considered deprecated. A future version of this action will use the `GITHUB_TOKEN` secret instead.
+  - `GIT_DEPLOY_KEY`: provide an SSH private key for a [deploy key][1]
+    - This is an alternative to `GITHUB_TOKEN` [which currently can't build pages][gt_limit].
+    - Personal Access Tokens are not desired either since they grant access to your
+      *whole* account.
 
 ## Environment variables
 
@@ -21,4 +23,6 @@ Extracted from https://github.com/desertpy/desertpy-pelican.
 It is not used there anymore though. For most sites though, this should
 suffice.
 
-  [1]: https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys
+[1]: https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys
+
+[gt_limit]: https://github.com/maxheld83/ghpages/pull/18#issuecomment-485274829
