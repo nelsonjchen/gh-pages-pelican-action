@@ -7,11 +7,6 @@ echo "ACTOR: $GITHUB_ACTOR"
 
 echo '=================== Install Requirements ==================='
 pip install -r requirements.txt
-echo '=================== Create deploy key to push ==================='
-mkdir /root/.ssh
-ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts && \
-echo "${GIT_DEPLOY_KEY}" > /root/.ssh/id_rsa && \
-chmod 400 /root/.ssh/id_rsa
 echo '=================== Build site ==================='
 pelican content -o output -s pelicanconf.py
 echo '=================== Publish to GitHub Pages ==================='
@@ -28,7 +23,7 @@ git add .
 echo -n 'Files to Commit:' && ls -l | wc -l
 timestamp=$(date +%s%3N)
 git commit -m "[ci skip] Automated deployment to GitHub Pages on $timestamp"
-git push deploy $remote_branch --force
+git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git $remote_branch --force
 rm -fr .git
 cd ../
 echo '=================== Done  ==================='
