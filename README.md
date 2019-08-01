@@ -15,6 +15,7 @@ Please ensure a `requirements.txt` is present for your site and installs
 ## Environment variables
 
   - `GH_PAGES_BRANCH` (optional): override the default `gh-pages` deployment branch
+  - `PELICAN_CONFIG_FILE` (optional): override the default `pelicanconf.py` config file
 
 ## History
 
