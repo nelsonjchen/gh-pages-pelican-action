@@ -1,0 +1,14 @@
+name: GitHub Pages Pelican Build Action
+description: This action builds a Pelican project and deploys it to GitHub Pages.
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+inputs:
+  GH_PAGES_BRANCH:
+    description: 'override the default `gh-pages` deployment branch'
+    required: false
+    default: 'gh-pages'
+  PELICAN_CONFIG_FILE:
+    description: 'Eye color of the Octocats'
+    required: true
