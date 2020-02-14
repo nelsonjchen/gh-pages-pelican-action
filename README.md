@@ -13,6 +13,12 @@ in the virtual environment your pelican site is developed in.
   - `GH_PAGES_BRANCH` (optional): override the default `gh-pages` deployment branch
   - `PELICAN_CONFIG_FILE` (optional): override the default `pelicanconf.py` config file
 
+## Demo
+
+Repository: https://github.com/nelsonjchen/pelican-action-demo
+
+Website: https://pelican-action-demo.mindflakes.com/
+
 ## History
 
 Extracted from https://github.com/desertpy/desertpy-pelican.
