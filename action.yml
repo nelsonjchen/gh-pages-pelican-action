@@ -1,5 +1,6 @@
 name: GitHub Pages Pelican Build Action
 description: This action builds a Pelican project and deploys it to GitHub Pages.
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -10,5 +11,6 @@ inputs:
     required: false
     default: 'gh-pages'
   PELICAN_CONFIG_FILE:
-    description: 'Eye color of the Octocats'
-    required: true
+    description: 'override the default `pelicanconf.py` config file'
+    required: false
+    default: pelicanconf.py
