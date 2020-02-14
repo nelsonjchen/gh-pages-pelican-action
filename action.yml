@@ -1,6 +1,10 @@
 name: GitHub Pages Pelican Build Action
 description: This action builds a Pelican project and deploys it to GitHub Pages.
 
+branding:
+  icon: 'home'
+  color: 'red'
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
