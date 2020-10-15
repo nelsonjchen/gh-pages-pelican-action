@@ -11,7 +11,8 @@ in the virtual environment your pelican site is developed in.
 ## Environment variables
 
   - `GH_PAGES_BRANCH` (optional): override the default `gh-pages` deployment branch
-  - `PELICAN_CONFIG_FILE` (optional): override the default `pelicanconf.py` config file
+  - `PELICAN_CONFIG_FILE` (optional): override the default `pelicanconf.py` config file        
+  - `GITHUB_TOKEN`: (required) should be `${{secrets.GITHUB_TOKEN}}`, see [the workflow demo in the demo repository for an example of this][workflow_demo].
 
 ## Demo
 
@@ -27,3 +28,4 @@ It is not used there anymore though. For most sites though, this should
 suffice.
 
 [1]: https://developer.github.com/v3/guides/managing-deploy-keys/#deploy-keys
+[workflow_demo]: https://github.com/nelsonjchen/pelican-action-demo/blob/98ad1a776e95d05b0658a179c4d28e20c353bba4/.github/workflows/pelican.yml#L19
