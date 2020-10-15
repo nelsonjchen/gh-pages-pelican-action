@@ -12,7 +12,7 @@ in the virtual environment your pelican site is developed in.
 
   - `GH_PAGES_BRANCH` (optional): override the default `gh-pages` deployment branch
   - `PELICAN_CONFIG_FILE` (optional): override the default `pelicanconf.py` config file        
-  - `GITHUB_TOKEN`: (required) should be `${{secrets.GITHUB_TOKEN}}`, see [the workflow demo in the demo repository for an example of this][workflow_demo].
+  - `GITHUB_TOKEN`: (required) should be `${{secrets.GITHUB_TOKEN}}`, see [the workflow demo in the demo repository for an example of this][workflow_demo]. This secret is fulfilled by GitHub.
 
 ## Demo
 
