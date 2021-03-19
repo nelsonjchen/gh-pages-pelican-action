@@ -18,3 +18,7 @@ inputs:
     description: 'override the default `pelicanconf.py` config file'
     required: false
     default: pelicanconf.py
+  PELICAN_CONTENT_FOLDER:
+    description: 'override the default `content` content folder'
+    required: false
+    default: content

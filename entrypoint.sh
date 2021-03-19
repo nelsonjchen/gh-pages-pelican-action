@@ -8,7 +8,7 @@ echo "ACTOR: $GITHUB_ACTOR"
 echo '=================== Install Requirements ==================='
 pip install -r requirements.txt
 echo '=================== Build site ==================='
-pelican content -o output -s ${PELICAN_CONFIG_FILE:=pelicanconf.py}
+pelican ${PELICAN_CONTENT_FOLDER:=content} -o output -s ${PELICAN_CONFIG_FILE:=pelicanconf.py} 
 echo '=================== Publish to GitHub Pages ==================='
 cd output
 # shellcheck disable=SC2012
