@@ -22,3 +22,6 @@ inputs:
     description: 'override the default `content` content folder'
     required: false
     default: content
+  PELICAN_THEME_FOLDER:
+    description: 'setup the theme folder with package.json file, is required if you need install node modules'
+    required: false
