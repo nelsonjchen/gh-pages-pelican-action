@@ -19,6 +19,10 @@ git remote add deploy "$remote_repo"
 git checkout $remote_branch || git checkout --orphan $remote_branch
 git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+if [ $GH_PAGES_CNAME != "none" ]
+then
+    echo $GH_PAGES_CNAME > CNAME
+fi
 git add .
 echo -n 'Files to Commit:' && ls -l | wc -l
 timestamp=$(date +%s%3N)

@@ -14,6 +14,10 @@ inputs:
     description: 'override the default `gh-pages` deployment branch'
     required: false
     default: 'gh-pages'
+  GH_PAGES_CNAME:
+    description: 'specify the custom domain configured for the output branch'
+    required: false
+    default: none
   PELICAN_CONFIG_FILE:
     description: 'override the default `pelicanconf.py` config file'
     required: false
