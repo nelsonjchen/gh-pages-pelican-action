@@ -11,6 +11,7 @@ in the virtual environment your pelican site is developed in.
 ## Environment variables
 
   - `GH_PAGES_BRANCH` (optional): override the default `gh-pages` deployment branch
+  - `GH_PAGES_CNAME` (optional): specify the custom domain you've configured (if any)
   - `PELICAN_CONFIG_FILE` (optional): override the default `pelicanconf.py` config file    
   - `PELICAN_CONTENT_FOLDER` (optional): 'override the default `content` content folder'        
   - `GITHUB_TOKEN`: (required) should be `${{secrets.GITHUB_TOKEN}}`, see [the workflow demo in the demo repository for an example of this][workflow_demo]. This secret is fulfilled by GitHub.
