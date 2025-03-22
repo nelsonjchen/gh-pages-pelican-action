@@ -1,3 +1,7 @@
+# No longer supported
+
+Sorry, I no longer use or support this project. Please look for alternatives. 
+
 # GitHub Pages Pelican Build Action
 
 This action builds a Pelican project and deploys it to GitHub Pages.
